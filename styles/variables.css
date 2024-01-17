@@ -7,6 +7,8 @@
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --title-color: #db00ff;
+  --title-text-color: #000028;
+  --text-color: #F1B2CE;
   --font-size: 18px;
   --button-hover: rgba(255, 0, 112, 0.4);
 }
