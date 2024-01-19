@@ -15,8 +15,8 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
-  min-block-size: 375px;
-  margin-block-end: 165px;
+  min-block-size: 649px;
+  margin-block-end: 158px;
 }
 
 .header-title {
@@ -26,8 +26,9 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
-  line-height: 82.5%; /* 129.525px */
-  margin-block-start: 120px;
+  line-height: 82.5%;
+  /* 129.525px */
+  margin-block-start: 111px;
   margin-inline-start: -19px;
 }
 
@@ -37,10 +38,12 @@
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
+  /* 130% */
   max-width: 491px;
   justify-self: end;
   align-self: end;
+  margin-block-end: 6px;
 }
 
 .title-decor {
@@ -52,6 +55,7 @@
   justify-content: center;
   gap: 10px;
 }
+
 .header__theme-menu {
   align-self: flex-start;
 }
@@ -63,7 +67,8 @@
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 100% */
+  line-height: 18px;
+  /* 100% */
   background-color: transparent;
   text-transform: lowercase;
   border: none;
@@ -104,7 +109,7 @@
   height: 25px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
-  bottom: 19px;
+  bottom: -99px;
   left: 19px;
 }
 
@@ -130,13 +135,15 @@
   background-color: var(--accent-color);
   box-shadow: 0px 0px 4px var(--accent-color);
   border-radius: 50%;
-  left: 48px;
+  left: 40px;
   top: 7px;
 }
 
 .main {
   display: grid;
   padding: 20px;
+  gap: 80px;
+  margin: 90px 0px;
 }
 
 .content__card-why {
@@ -151,7 +158,8 @@
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
+  /* 130% */
 }
 
 .card-list__why {
@@ -165,7 +173,8 @@
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
+  /* 130% */
 }
 
 .card-text {
@@ -174,7 +183,8 @@
   font-size: var(--font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
+  /* 130% */
   margin-block-start: 10px;
 }
 
@@ -182,9 +192,10 @@
   margin-block-start: 10px;
 }
 
-.content__what {
+/*.content__what {
   margin-block-start: 80px;
 }
+*/
 .card-list__what {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -194,4 +205,109 @@
 
 .what__card-title {
   max-width: 315px;
+}
+
+.content__how {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10px;
+}
+
+.how__card-title {
+}
+
+.card-list__how {
+  display: grid;
+  gap: 20px;
+}
+
+.card-list-item__how {
+}
+
+.card-title__how {
+  color: var(--title-text-color);
+  font-family: "IBM Plex mono", monospace;
+  font-size: var(--font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
+  /* 130% */
+}
+
+.section-galery {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.galery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 21px;
+}
+
+.title-galery {
+  grid-column: 1/4;
+}
+
+.sunset {
+  grid-column: 1/3;
+}
+
+.ice-cream {
+  grid-row: span 2;
+}
+
+.tape {
+  grid-row: 3/5;
+}
+
+.street {
+  grid-column: span 2;
+}
+
+.section-galery {
+  display: grid;
+}
+
+.footer {
+  position: relative;
+  block-size: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  color: var(--title-color);
+  text-shadow: 2px 2px 0px var(--accent-color);
+  font-family: "IBM Plex mono", monospace;
+  font-size: 157px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+  /* 129.525px */
+}
+
+.footer__decorated-zone::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  right: 19px;
+  top: 19px;
+}
+
+.footer__decorated-zone::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  bottom: 19px;
+  left: 19px;
 }
