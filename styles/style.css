@@ -15,6 +15,7 @@
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
+  height: 100vh;
   margin-block-end: 158px;
 }
 
@@ -273,6 +274,7 @@
 .footer {
   position: relative;
   block-size: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,10 +362,6 @@
 
   .galery {
     gap: 19px;
-  }
-
-  .footer {
-    min-block-size: 0px;
   }
 
   .footer-title {
