@@ -6,9 +6,21 @@
 :root {
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
+  --nav-color: #ff0070;
+  --active-color: #ff0070;
+  --decorated-color: #ff0070;
+  --focus-color: #ff0070;
   --title-color: #db00ff;
   --title-text-color: #000028;
+  --title-card-text: #ff0070;
+  --text-shadow: #ff0070;
   --text-color: #F1B2CE;
   --font-size: 18px;
   --button-hover: rgba(255, 0, 112, 0.4);
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --title-decor:#ff0070;
+  --font-size-footer_tablet: 120px;
+  --text-color-a: #F1B2CE;
+
 }
