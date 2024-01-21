@@ -11,8 +11,8 @@
 
 .header {
   position: relative;
- padding: 20px;
- padding-top: 20px;
+  padding: 20px;
+  padding-top: 20px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   block-size: 100vh;
@@ -21,7 +21,7 @@
 
 .header-title {
   position: relative;
-    left: -20px;
+  left: -20px;
   color: var(--title-color);
   text-shadow: 4px 4px 0px var(--accent-color);
   font-family: "IBM Plex mono", monospace;
@@ -158,8 +158,7 @@
   line-height: 23.4px;
   /* 130% */
 }
-
-.card-list__why {
+.card-list {
   display: grid;
   gap: 20px;
 }
@@ -206,7 +205,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding-block-start: 20px;
-  gap: 18px;
 }
 
 .what__card-title {
@@ -217,11 +215,6 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 10px;
-}
-
-.card-list__how {
-  display: grid;
-  gap: 20px;
 }
 
 .card-title__how {
@@ -245,7 +238,7 @@
 .galery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 21px;
+  gap: 20px;
 }
 
 .title-galery {
@@ -274,14 +267,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 768px;
+  min-block-size: 668px;
 }
 
 .footer-title {
   color: var(--title-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: "IBM Plex mono", monospace;
-  font-size: var(--font-size-desktop); 
+  font-size: var(--font-size-desktop);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -311,31 +304,22 @@
 }
 
 @media (width <1024px) and (width >=768px) {
-  .header {
-    grid-template-rows: 268px 274px 446px;
-    margin-block-end: 154px;
-  }
-  .header-title {
-    align-self: end;
-  }
   .header-text {
     max-width: 364px;
     align-self: center;
   }
 
   .header__theme-menu-list {
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 13px;
   }
 
   .header__theme-menu {
-    align-self: flex-end;
+    align-self: center;
   }
 
-  .content__card-why {
-    padding-block-start: 259px;
+  .content__why {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -345,7 +329,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 20px;
   }
 
   .what__card-title {
@@ -354,10 +337,6 @@
 
   .content__how {
     gap: 20px;
-  }
-
-  .galery {
-    gap: 19px;
   }
 
   .footer-title {
@@ -371,18 +350,15 @@
 
 @media (width < 768px) {
   .header {
-    min-block-size: 668px;
     padding: 10px;
     margin-block-end: 30px;
   }
   .header-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin: 0px;
+    left: 0px;
   }
   .header-text {
     max-width: 355px;
-    align-self: center;
-    margin: 0px;
   }
 
   .header__theme-menu-list {
@@ -416,7 +392,7 @@
     margin: 0px;
     gap: 50px;
   }
-  .content__card-why {
+  .content__why {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -441,20 +417,19 @@
   }
 
   .footer {
-    min-block-size: 668px;
-    padding-block-start: 66px;
+    padding: 10px;
   }
 
   .footer-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .footer__decorated-zone::before {
+  .decorated-zone::before {
     right: 10px;
     top: 41px;
   }
 
-  .footer__decorated-zone::after {
+  .decorated-zone::after {
     bottom: 10px;
     left: 10px;
   }
