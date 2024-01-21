@@ -7,6 +7,7 @@
   --cover-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --nav-color: #ff0070;
+  --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --active-color: #ff0070;
   --decorated-color: #ff0070;
   --focus-color: #ff0070;
