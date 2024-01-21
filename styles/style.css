@@ -3,6 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-image: var(--cover-image);
+  background-color: var(--background-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +65,7 @@
   font-family: "IBM Plex mono", monospace;
   font-size: var(--font-size);
   font-style: normal;
-  font-weight: var(-font-weight-normal);
+  font-weight: var(--font-weight-normal);
   line-height: 18px;
   /* 100% */
   background-color: transparent;
@@ -286,8 +287,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--decorated-color);
+  border-right: 1px solid var(--decorated-color);
   right: 19px;
   top: 19px;
 }
@@ -297,8 +298,8 @@
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--decorated-color);
+  border-left: 1px solid var(--decorated-color);
   bottom: 19px;
   left: 19px;
 }
@@ -417,20 +418,11 @@
   }
 
   .footer {
+    margin-block-start: 30px;
     padding: 10px;
   }
 
   .footer-title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .decorated-zone::before {
-    right: 10px;
-    top: 41px;
-  }
-
-  .decorated-zone::after {
-    bottom: 10px;
-    left: 10px;
   }
 }
