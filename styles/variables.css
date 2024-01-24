@@ -26,3 +26,11 @@
   --text-color-a: #f1b2ce;
   --background-color: #000028;
 }
+
+.page.theme_light .rec-decorated {
+  display: none;
+}
+
+.page.theme_dark .rec-decorated {
+  display: block;
+}

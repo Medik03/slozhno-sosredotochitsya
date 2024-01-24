@@ -299,8 +299,6 @@
   }
 
   .content__why {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
 
@@ -320,10 +318,6 @@
 
   .footer-title {
     font-size: var(--font-size-footer_tablet);
-  }
-
-  .footer__decorated-zone::before {
-    top: -29px;
   }
 }
 

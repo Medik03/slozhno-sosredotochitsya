@@ -16,58 +16,52 @@
   --active-color: #353430;
   --decorated-color: #353430;
   --focus-color: #353430;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --title-text-color: #353430;
   --title-card-text: #353430;
   --text-color: #353430;
   --font-size: 18px;
-  --button-hover: rgba(50, 49, 45, 0.40);
+  --button-hover: rgba(50, 49, 45, 0.4);
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --title-decor: #ff8dcb;
-  --text-shadow: #FF8DCB;
+  --text-shadow: #ff8dcb;
   --text-color-a: #353430;
-
+  --background-color: #fff1f7;
 }
-
 
 .page.theme_light .rec-decorated {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cover-image: url(../images/cover-image-light.png);
+    --accent-color: #ff0070;
+    --decorated-color: #353430;
+    --nav-color: #353430;
+    --active-color: #353430;
+    --decorated-color: #353430;
+    --focus-color: #353430;
+    --title-color: #ffc2e6;
+    --title-text-color: #353430;
+    --title-card-text: #353430;
+    --text-color: #353430;
+    --font-size: 18px;
+    --button-hover: rgba(50, 49, 45, 0.4);
+    --font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --title-decor: #ff8dcb;
+    --background-color: #fff1f7;
+    --text-color-a: #353430;
+    --text-shadow: #ff8dcb;
   }
 
-.page.theme_auto .rec-decorated {
+  .page.theme_light .rec-decorated {
     display: none;
-    }
-  
-  
-
-  @media (prefers-color-scheme: light) {
-    :root {
-      --cover-image: url(../images/cover-image-light.png);
-      --accent-color: #ff0070;
-      --decorated-color: #353430;
-      --nav-color: #353430;
-      --active-color: #353430;
-      --decorated-color: #353430;
-      --focus-color: #353430;
-      --title-color: #FFC2E6;
-      --title-text-color: #353430;
-      --title-card-text: #353430;
-      --text-color: #353430;
-      --font-size: 18px;
-      --button-hover: rgba(50, 49, 45, 0.40);
-      --font-weight-bold: 700;
-      --font-weight-normal: 400;
-      --title-decor: #ff8dcb;
-      --background-color: #fff1f7;
-    }
-
-    .page.theme_light.rec-decorated {
-      display: none;
-      }
-
-    .page.theme_auto .rec-decorated {
-        display: none;
-        }
-      
   }
+
+  .rec-decorated {
+    display: none;
+  }
+}
